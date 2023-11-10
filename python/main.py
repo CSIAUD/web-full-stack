@@ -16,12 +16,12 @@ while True :
         if fileName[-3:] != ".py" :
             continue
         
-        exec(open("./scripts/"+fileName,"rb").read().decode('utf-8'))
+        exec(open("./scripts/"+fileName, 'r', encoding='utf-8').read())
 
         name = fileName[:-3]
         functions.append(name)
 
-        file = open("./scripts/"+fileName, 'r')
+        file = open("./scripts/"+fileName, 'r', encoding='utf-8')
         firstLine = file.readline()
         if "@Name " in firstLine :
             temp = (firstLine.split("@Name ")[1]).split("\n")[0]
