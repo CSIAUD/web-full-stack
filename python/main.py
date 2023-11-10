@@ -16,7 +16,7 @@ while True :
         if fileName[-3:] != ".py" :
             continue
         
-        exec(open("./scripts/"+fileName).read())
+        exec(open("./scripts/"+fileName,"rb").read().decode('utf-8'))
 
         name = fileName[:-3]
         functions.append(name)
