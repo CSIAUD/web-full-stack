@@ -1,4 +1,4 @@
-# @Name Idem 6 + cacul Min / Max / temperature moyenne
+# @Name Idem 6 + cacul Min / Max / température moyenne
 
 def moyenne(tab) :
     return sum(tab)/len(tab)

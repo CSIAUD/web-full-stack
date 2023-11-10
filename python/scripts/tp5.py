@@ -1,4 +1,4 @@
-# @Name Tri des prenoms en fonction de la taille
+# @Name Tri des prénoms en fonction de la taille
 
 def tp5() :
     names = ['Jean', 'Maximilien', 'Brigitte', 'Sonia', 'Abdelkarim', 'Sandra']

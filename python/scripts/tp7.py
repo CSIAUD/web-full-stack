@@ -1,4 +1,4 @@
-# @Name Creation de Procedure et fonction pour determination du choix
+# @Name Création de Procédure et fonction pour détermination du choix
 
 def choix1() :
     print("Le choix est 1")

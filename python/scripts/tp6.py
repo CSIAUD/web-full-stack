@@ -1,4 +1,4 @@
-# @Name Tri et Comptage des temperatures du mois
+# @Name Tri et Comptage des températures du mois
 
 def tp6() :
     tabTemp = [

@@ -1,4 +1,4 @@
-# @Name Le jeu du nombre mystere
+# @Name Le jeu du nombre mystère
 
 import random
 
