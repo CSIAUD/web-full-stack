@@ -1,9 +1,15 @@
 from os import listdir
 from os.path import isfile, join
+import os
+
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
 
 fileList = [f for f in listdir("./scripts") if isfile(join("./scripts", f))]
 files = {}
 functions = []
+
+cls()
 
 while True :
     for key, fileName in enumerate(fileList) :
@@ -33,7 +39,7 @@ while True :
         print(f"{key + 1} - {file["name"]}")
 
     choice = input(f"\nMerci de choisir un nombre entre 1 et {len(files)} (ou q pour quitter)\n")
-    print("\n========================\n\n")
+    cls()
 
     try :
         nb = int(choice)
@@ -47,4 +53,5 @@ while True :
             break
         print("/!\\ Une erreur est survenue, merci de réessayer /!\\ \n")
 
+cls()
 print("Bye ;)")
